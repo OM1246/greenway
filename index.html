@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenway Homes & Resort | Premium Nature Villas at Wada, Palghar</title>
+    <meta name="description" content="Premium nature villas and plots at Greenway Homes & Resort, Wada, Palghar. Discover a lifestyle surrounded by nature, resort-style amenities and emerging regional connectivity.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Greenway Homes & Resort | Premium Nature Villas">
+    <meta property="og:description" content="Discover a lifestyle surrounded by nature, resort-style amenities and emerging regional connectivity at Wada.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-dark-green: #173D2B;
+            --deep-forest-green: #0D291D;
+            --emerald: #24563B;
+            --olive: #596B42;
+            --sage: #A8B79A;
+            --cream: #F4F1E7;
+            --white: #FFFFFF;
+            --gold-accent: #B69A5A;
+            
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-slow: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--deep-forest-green);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .text-center { text-align: center; }
+        .text-cream { color: var(--cream); }
+        .text-gold { color: var(--gold-accent); }
+        .text-sage { color: var(--sage); }
+        
+        .bg-dark { background-color: var(--deep-forest-green); color: var(--cream); }
+        .bg-primary { background-color: var(--primary-dark-green); color: var(--cream); }
+        .bg-cream { background-color: var(--cream); color: var(--deep-forest-green); }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--gold-accent);
+            color: var(--deep-forest-green);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--white);
+            color: var(--deep-forest-green);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--cream);
+            color: var(--cream);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--cream);
+            color: var(--deep-forest-green);
+        }
+
+        .btn-outline-dark {
+            border-color: var(--deep-forest-green);
+            color: var(--deep-forest-green);
+        }
+
+        .btn-outline-dark:hover {
+            background-color: var(--deep-forest-green);
+            color: var(--cream);
+        }
+
+        /* Typography Styles */
+        .eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-accent);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .heading-lg {
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .heading-md {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
+
+        .heading-sm {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .body-lg {
+            font-size: clamp(1.125rem, 2vw, 1.25rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        /* Placeholders for Brochure Images */
+        .img-placeholder {
+            background-color: var(--emerald);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--sage);
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid var(--olive);
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition-slow);
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 1. STICKY NAVIGATION */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            background: transparent;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .navbar.scrolled {
+            background: rgba(13, 41, 29, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 5%;
+            border-bottom: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--white);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--cream);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--gold-accent);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--gold-accent);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--white);
+            margin: 5px 0;
+            transition: var(--transition-smooth);
+        }
+
+        /* 2. HERO SECTION */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background-color: var(--deep-forest-green);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: url('hero-bg.png') center/cover no-repeat;
+        }
+
+        .hero-bg .img-placeholder {
+            background-color: var(--deep-forest-green);
+            color: rgba(255,255,255,0.2);
+            font-size: 1.5rem;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(13,41,29,0.7) 0%, rgba(13,41,29,0.9) 100%);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            color: var(--white);
+            width: 100%;
+            max-width: 1440px;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            text-align: left;
+            max-width: 850px;
+            margin-right: auto;
+        }
+
+        .hero-text .eyebrow {
+            color: var(--gold-accent);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .hero-text .heading-md {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+        }
+
+        .hero .heading-lg {
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .hero .sub-headline {
+            font-family: var(--font-heading);
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-style: italic;
+            color: var(--sage);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .body-lg {
+            margin: 0 auto 2.5rem auto;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: var(--sage);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .scroll-line {
+            width: 1px;
+            height: 40px;
+            background-color: rgba(168, 183, 154, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scroll-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: var(--gold-accent);
+            animation: scrollDown 2s infinite ease-in-out;
+        }
+
+        @keyframes scrollDown {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(200%); }
+        }
+
+        /* 3. PROJECT INTRODUCTION */
+        .intro-section {
+            background-color: var(--cream);
+            color: var(--deep-forest-green);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .intro-content {
+            padding-right: 2rem;
+        }
+
+        .intro-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid var(--sage);
+            padding-top: 3rem;
+        }
+
+        .feature-card {
+            border-left: 1px solid var(--gold-accent);
+            padding-left: 1.5rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+        }
+
+        .intro-image {
+            height: auto;
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 4. INVESTMENT STORY */
+        .investment-section {
+            position: relative;
+        }
+        
+        .investment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+
+        .investment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .investment-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(244, 241, 231, 0.1);
+        }
+
+        .investment-item:last-child {
+            border-bottom: none;
+        }
+
+        .investment-icon {
+            color: var(--gold-accent);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+
+        .investment-text h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-heading);
+            letter-spacing: 0.5px;
+        }
+
+        .investment-text p {
+            color: var(--sage);
+            font-size: 0.95rem;
+        }
+
+
+        /* 6. WHY WADA */
+        .wada-section {
+            background-color: var(--deep-forest-green);
+            position: relative;
+            padding: 120px 0;
+            overflow: hidden;
+        }
+        
+        .wada-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .wada-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .wada-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .wada-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: var(--transition-smooth);
+        }
+
+        .wada-card:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: var(--gold-accent);
+            transform: translateY(-10px);
+        }
+
+        .wada-card h5 {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--sage);
+            margin-bottom: 1rem;
+        }
+
+        /* 7. DESTINATION / LIFESTYLE */
+        .destination-section {
+            background-color: var(--cream);
+        }
+
+        .dest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .dest-card {
+            background-color: var(--primary-dark-green);
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2.5rem 2rem;
+            color: var(--white);
+            transition: var(--transition-smooth);
+            border: 1px solid transparent;
+        }
+
+        .dest-card:hover {
+            background-color: var(--deep-forest-green);
+            transform: translateY(-5px);
+            border-color: var(--gold-accent);
+        }
+
+        .dest-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .dest-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+
+        /* 9. THE VILLAS */
+        .villas-section {
+            background-color: var(--white);
+        }
+
+        .villa-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6rem;
+            margin-top: 4rem;
+        }
+
+        .villa-card {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .villa-card:nth-child(even) {
+            grid-template-columns: 1fr 1.2fr;
+        }
+
+        .villa-card:nth-child(even) .villa-image {
+            order: 2;
+        }
+
+        .villa-card:nth-child(even) .villa-info {
+            order: 1;
+        }
+
+        .villa-image {
+            aspect-ratio: 4/3;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .villa-info h3 {
+            font-size: 2.5rem;
+            color: var(--primary-dark-green);
+            margin-bottom: 1rem;
+        }
+
+        .villa-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .villa-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--deep-forest-green);
+        }
+
+        .villa-features li::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: var(--gold-accent);
+            border-radius: 50%;
+        }
+
+        /* 10. AMENITIES */
+        .amenities-section {
+            background-color: var(--deep-forest-green);
+            color: var(--white);
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .amenity-card {
+            position: relative;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .amenity-card .img-placeholder {
+            transition: var(--transition-slow);
+        }
+
+        .amenity-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(13, 41, 29, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+        }
+
+        .amenity-card:hover .img-placeholder {
+            transform: scale(1.1);
+        }
+
+        .amenity-card:hover .amenity-overlay {
+            background: rgba(13, 41, 29, 0.7);
+        }
+
+        .amenity-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition-smooth);
+        }
+
+        .amenity-card:hover .amenity-title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 11. HOSPITALITY SERVICES */
+        .hospitality-section {
+            background-color: var(--cream);
+        }
+
+        .hospitality-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hosp-image {
+            aspect-ratio: 3/4;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .hosp-list {
+            margin-top: 3rem;
+        }
+
+        .hosp-list li {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--sage);
+            color: var(--primary-dark-green);
+        }
+
+        /* 12. LOCATION ADVANTAGE */
+        .location-section {
+            background-color: var(--white);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+
+        .location-map {
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--cream);
+            align-self: center;
+        }
+
+        .loc-advantage-list {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .loc-item {
+            background-color: var(--cream);
+            padding: 1.5rem;
+            border-left: 3px solid var(--gold-accent);
+        }
+
+        .loc-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark-green);
+        }
+
+        /* 13. GALLERY */
+        .gallery-section {
+            padding: 100px 0 0 0;
+            background-color: var(--deep-forest-green);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 300px;
+            gap: 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item .img-placeholder {
+            transition: var(--transition-slow);
+            border: none;
+        }
+
+        .gallery-item:hover .img-placeholder {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay span {
+            color: var(--white);
+            font-size: 0.875rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* 14. DEVELOPER TRUST */
+        .trust-section {
+            background-color: var(--cream);
+            text-align: center;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .trust-item h3 {
+            font-size: 3.5rem;
+            color: var(--primary-dark-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-item p {
+            font-size: 1rem;
+            color: var(--deep-forest-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* 15. FINAL CTA */
+        .cta-section {
+            background-color: var(--primary-dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            pointer-events: none;
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        /* 16. CONTACT / FOOTER & FORM */
+        .footer-section {
+            background-color: var(--deep-forest-green);
+            color: var(--cream);
+            padding: 80px 0 40px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            color: var(--sage);
+        }
+
+        .contact-details strong {
+            color: var(--white);
+            display: block;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid var(--sage);
+            color: var(--cream);
+            transition: var(--transition-smooth);
+        }
+
+        .contact-actions a:hover {
+            background-color: var(--gold-accent);
+            border-color: var(--gold-accent);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .rera-box {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: inline-block;
+        }
+
+        .rera-box span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--sage);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        /* Lead Gen Form */
+        .enquiry-form {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .enquiry-form h4 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--deep-forest-green);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--sage);
+            padding: 12px 0;
+            color: var(--deep-forest-green);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-bottom-color: var(--primary-dark-green);
+        }
+
+        .form-control::placeholder {
+            color: rgba(13, 41, 29, 0.5);
+        }
+
+        select.form-control {
+            appearance: none;
+            cursor: pointer;
+        }
+        
+        select.form-control option {
+            background-color: var(--white);
+            color: var(--deep-forest-green);
+        }
+
+        .privacy-note {
+            font-size: 0.75rem;
+            color: var(--sage);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--sage);
+        }
+
+        /* Floating CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .float-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+        }
+
+        .float-whatsapp {
+            background-color: #25D366;
+            color: var(--deep-forest-green);
+            animation: pulse 2s infinite;
+        }
+
+        .float-enquire {
+            background-color: var(--gold-accent);
+            color: var(--deep-forest-green);
+        }
+
+        .float-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Form Success State */
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .form-success h4 {
+            color: var(--gold-accent);
+            margin-bottom: 1rem;
+        }
+
+        /* Privacy Modal */
+        .privacy-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 41, 29, 0.85);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+        }
+        
+        .privacy-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .privacy-modal {
+            background-color: var(--cream);
+            width: 90%;
+            max-width: 600px;
+            padding: 3rem;
+            border-radius: 16px;
+            border: 2px solid var(--gold-accent);
+            text-align: center;
+            transform: translateY(50px) scale(0.95);
+            transition: var(--transition-smooth);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .privacy-modal-overlay.active .privacy-modal {
+            transform: translateY(0) scale(1);
+        }
+
+        .privacy-modal-icon {
+            font-size: 3rem;
+            color: var(--gold-accent);
+            margin-bottom: 1rem;
+        }
+
+        .privacy-modal h3 {
+            font-size: 1.75rem;
+            color: var(--primary-dark-green);
+            margin-bottom: 1rem;
+        }
+
+        .privacy-modal p {
+            color: var(--deep-forest-green);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .privacy-modal ul {
+            text-align: left;
+            margin-bottom: 2.5rem;
+            color: var(--deep-forest-green);
+        }
+        
+        .privacy-modal ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            list-style: none;
+        }
+        
+        .privacy-modal ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--gold-accent);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .privacy-modal .btn-accept {
+            background-color: var(--primary-dark-green);
+            color: var(--cream);
+            width: 100%;
+            font-size: 1.1rem;
+            padding: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            font-family: var(--font-body);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .privacy-modal .btn-accept:hover {
+            background-color: var(--gold-accent);
+            color: var(--deep-forest-green);
+        }
+
+        .hide-on-desktop { display: none !important; }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            .hero-content {
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+                padding-top: 100px;
+            }
+            .hero-text {
+                text-align: center;
+                max-width: 100%;
+            }
+            .hero-text .heading-md {
+                font-size: clamp(2rem, 5vw, 2.5rem);
+            }
+            .heading-lg { font-size: 3.5rem; }
+            .intro-grid, .investment-grid, .location-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .villa-card, .villa-card:nth-child(even) { grid-template-columns: 1fr; gap: 2rem; }
+            .villa-card:nth-child(even) .villa-image { order: 1; }
+            .villa-card:nth-child(even) .villa-info { order: 2; }
+            .wada-cards { grid-template-columns: repeat(2, 1fr); }
+            .dest-grid { grid-template-columns: repeat(2, 1fr); }
+            .timeline-wrapper::before { left: 30px; }
+            .timeline-item, .timeline-item:nth-child(even) { flex-direction: column; align-items: flex-start; padding-left: 80px; }
+            .timeline-content { width: 100%; }
+            .timeline-dot { left: 30px; }
+            .timeline-item:nth-child(even) .timeline-number { left: -20px; right: auto; }
+            .hospitality-grid, .footer-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg {
+                background: url('hero-bg-mobile.png') center/cover no-repeat;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--deep-forest-green);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: var(--transition-smooth);
+                z-index: -1;
+            }
+            .nav-links.active { right: 0; }
+            .hamburger { display: block; }
+            .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+            
+            .heading-lg { font-size: 2.5rem; }
+            .heading-md { font-size: 2rem; }
+            .section-padding { padding: 60px 0; }
+            .intro-features { grid-template-columns: 1fr; }
+            .wada-cards { grid-template-columns: 1fr; }
+            .dest-grid { grid-template-columns: 1fr; }
+            .trust-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .cta-btns { flex-direction: column; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item.large { grid-column: span 1; grid-row: span 1; }
+            .floating-cta { bottom: 20px; right: 20px; }
+            .float-btn { padding: 10px 16px; font-size: 0.75rem; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+            .hide-on-mobile { display: none !important; }
+            .hide-on-desktop { display: block !important; }
+            #project.intro-section { padding: 0 !important; }
+            #project .container { padding: 0 !important; max-width: 100% !important; width: 100% !important; }
+            .video-container {
+                max-width: 100% !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                margin: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. STICKY NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo"><img src="greenway_logo.png" alt="Greenway Homes & Resort" style="height: 75px; width: auto;"></a>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#project">The Project</a>
+            <a href="#location">Location</a>
+            <a href="#villas">Villas</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#investment">Investment</a>
+            <a href="#home" class="btn btn-outline" style="padding: 8px 20px; margin-left: 10px;">Enquire Now</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <div class="hero-text">
+                <span class="eyebrow">Mumbai 4.0 Is Rising</span>
+                <h1 class="heading-md">Luxury Villa With Assured Rental from Day 1</h1>
+                <p class="body-lg" style="margin-bottom: 0; font-size: 1.5rem; color: var(--gold-accent);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px; margin-top: -4px;">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Location: Wada, Palghar
+                </p>
+            </div>
+            <div class="contact-form">
+                <div class="enquiry-form" id="leadFormContainer" style="text-align: left;">
+                    <h4>Register To Receive Your Complete Information</h4>
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="fullName" placeholder="Full Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile Number *" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address *" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request a Call Back</button>
+                        <p class="privacy-note">Your information is kept completely confidential and will not be shared.</p>
+                    </form>
+                </div>
+                
+                <div class="form-success" id="formSuccess">
+                    <h4>THANK YOU</h4>
+                    <p>Your enquiry has been received. Our luxury property advisor will contact you shortly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- 3. VIDEO SHOWCASE -->
+    <section class="intro-section section-padding" id="project">
+        <div class="container intro-grid">
+            <!-- Left: Video Player -->
+            <div class="intro-image fade-in video-container" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); background-color: var(--primary-dark-green); max-width: 360px; margin: 0 auto;">
+                <video width="100%" controls poster="Screenshot_1-10-2026_173915_.jpeg" style="display: block; aspect-ratio: 9/16; object-fit: cover; background-color: #000;">
+                    <source src="Sep Greenway R3.1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Mobile-only text -->
+            <div class="hide-on-desktop fade-in" style="text-align: center; margin-top: 1rem; padding: 0 1rem; padding-bottom: 1rem;">
+                <p style="font-weight: 500; color: var(--gold-accent); font-size: 1.4rem;">✦ Authentic On-Location Drone Footage</p>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="intro-content fade-in hide-on-mobile" style="padding-left: 2rem;">
+                <span class="eyebrow">Your Oasis Awaits</span>
+                <h2 class="heading-md" style="line-height: 1.2;">EXPERIENCE THE MAGIC OF GREENWAY HOMES</h2>
+                <p class="body-lg" style="color: var(--deep-forest-green); font-size: 1.125rem;">Step into a world where luxury meets tranquility. Watch our video to discover the lush landscapes, premium amenities, and the serene lifestyle that awaits you at Greenway Homes & Resort.</p>
+                <p style="font-weight: 500; color: var(--gold-accent); margin-top: 1rem; font-size: 1.6rem;">✦ Authentic On-Location Drone Footage</p>
+                
+                <a href="#villas" class="btn btn-primary" style="margin-top: 1.5rem; border-radius: 4px;">Explore Villas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. INVESTMENT STORY -->
+    <section class="investment-section section-padding bg-dark" id="investment">
+        <div class="container investment-grid">
+            <div class="investment-header fade-in">
+                <span class="eyebrow text-gold">Investment Story</span>
+                <h2 class="heading-md text-cream">WHY GREENWAY?</h2>
+                <h3 class="heading-sm text-sage" style="font-family: var(--font-body); font-weight: 300;">NATURE TODAY.<br>GROWTH TOMORROW.</h3>
+            </div>
+            <div class="investment-list fade-in">
+                <div class="investment-item">
+                    <div class="investment-icon">✦</div>
+                    <div class="investment-text">
+                        <h4 class="text-cream">Increasing Demand for Nature-Based Living</h4>
+                        <p>As city life grows denser, the shift towards open, green sanctuaries has accelerated, making Wada a prime choice.</p>
+                    </div>
+                </div>
+                <div class="investment-item">
+                    <div class="investment-icon">✦</div>
+                    <div class="investment-text">
+                        <h4 class="text-cream">Emerging Second-Home & Villa Belt</h4>
+                        <p>Recognized as a preferred destination for holiday homes, driving consistent rental and resale demand.</p>
+                    </div>
+                </div>
+                <div class="investment-item">
+                    <div class="investment-icon">✦</div>
+                    <div class="investment-text">
+                        <h4 class="text-cream">Infrastructure-Led Growth</h4>
+                        <p>Massive state and central government projects are dramatically improving connectivity and commercial viability.</p>
+                    </div>
+                </div>
+                <div class="investment-item">
+                    <div class="investment-icon">✦</div>
+                    <div class="investment-text">
+                        <h4 class="text-cream">Tourism & Lifestyle Demand</h4>
+                        <p>Proximity to spiritual centers, lakes, and trekking trails guarantees steady footfall and lifestyle appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 12. STRATEGIC LOCATION -->
+    <section class="location-section section-padding" id="location">
+        <div class="container location-grid">
+            <div class="location-content fade-in">
+                <span class="eyebrow">Connectivity</span>
+                <h2 class="heading-md">STRATEGIC LOCATION ADVANTAGE</h2>
+                <p class="body-lg" style="color: var(--deep-forest-green);">Greenway Homes & Resort is located within driving distance from Mumbai, offering the perfect balance between accessibility and peaceful surroundings.</p>
+                
+                <div class="loc-advantage-list">
+                    <div class="loc-item">
+                        <h4>Excellent Road Connectivity</h4>
+                        <p>Well-connected via state highways ensuring smooth drives.</p>
+                    </div>
+                    <div class="loc-item">
+                        <h4>Easily Accessible from Mumbai</h4>
+                        <p>A comfortable drive making it an ideal weekend home or primary residence.</p>
+                    </div>
+                    <div class="loc-item">
+                        <h4>Fast-Developing Growth Corridor</h4>
+                        <p>Positioned strategically to benefit from upcoming infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map fade-in">
+                <img src="Screenshot_3-10-2026_135755_web.whatsapp.com.jpeg" alt="Project Location Map" style="width: 100%; height: auto; display: block;">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- 16. CONTACT / FOOTER & FORM -->
+    <footer class="footer-section" id="contact">
+        <div class="container footer-grid">
+            <div class="contact-info fade-in">
+                <span class="eyebrow text-gold">Get in Touch</span>
+                <h3>YOUR GREENWAY JOURNEY STARTS HERE.</h3>
+                
+                <div class="contact-details">
+                    <p>
+                        <span style="font-size: 1.2rem; color: var(--gold-accent);">⚲</span>
+                        <span>
+                            <strong>SITE ADDRESS — GREENWAY WADA</strong>
+                            Greenway Properties<br>
+                            Harnoli Pada, Jawahar Road,<br>
+                            Malawada, Vikramgad,<br>
+                            Maharashtra 421303
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: 1.2rem; color: var(--gold-accent);">☏</span>
+                        <span>
+                            <strong>PHONE</strong>
+                            <a href="tel:+919321148253">+91 93211 48253</a>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: 1.2rem; color: var(--gold-accent);">✉</span>
+                        <span>
+                            <strong>EMAIL</strong>
+                            <a href="mailto:greenwaywada007@yahoo.com">greenwaywada007@yahoo.com</a>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <a href="https://wa.me/919321148253" target="_blank" aria-label="WhatsApp">W</a>
+                    <a href="tel:+919321148253" aria-label="Call">C</a>
+                    <a href="mailto:greenwaywada007@yahoo.com" aria-label="Email">E</a>
+                </div>
+
+                <div class="rera-box">
+                    <span>MahaRERA Registration Number</span>
+                    <strong>P9 90 00 00 70 47</strong>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class="container footer-bottom">
+            <div class="logo"><img src="greenway_logo.png" alt="Greenway Homes & Resort" style="height: 90px; width: auto;"></div>
+            <p>&copy; 2026 Greenway Homes & Resort. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING CTA -->
+    <div class="floating-cta">
+        <a href="#home" class="float-btn float-enquire">Enquire Now</a>
+    </div>
+
+    <!-- PRIVACY MODAL -->
+    <div class="privacy-modal-overlay" id="privacyModal">
+        <div class="privacy-modal">
+            <div class="privacy-modal-icon">🔒</div>
+            <h3>Your Privacy is Our Priority</h3>
+            <p>Before you proceed, we want to assure you that your details are completely safe with us.</p>
+            <ul>
+                <li>We use industry-standard security to protect your data.</li>
+                <li>Your information will <strong>never</strong> be shared with or sold to third parties.</li>
+                <li>We will only use your details to assist you with your enquiry.</li>
+            </ul>
+            <button class="btn-accept" id="acceptPrivacyBtn">I Accept & Continue</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Sticky Navbar & Scroll Styling
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 2. Mobile Menu Toggle
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const navItems = navLinks.querySelectorAll('a');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // 3. Scroll Reveal Animations (Intersection Observer)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+
+            // 4. Form Submission Simulation
+            const form = document.getElementById('leadForm');
+            const formContainer = document.getElementById('leadFormContainer');
+            const successMsg = document.getElementById('formSuccess');
+
+            if(form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    // Frontend validation is handled by HTML5 attributes (required, pattern, type)
+                    
+                    // Simulate processing
+                    const btn = form.querySelector('button');
+                    const originalText = btn.innerText;
+                    btn.innerText = 'Sending...';
+                    btn.style.opacity = '0.8';
+                    btn.disabled = true;
+
+                    setTimeout(() => {
+                        formContainer.style.display = 'none';
+                        successMsg.style.display = 'block';
+                    }, 1200);
+                });
+            }
+
+            // 5. Privacy Modal on Form Click
+            const privacyModal = document.getElementById('privacyModal');
+            const acceptPrivacyBtn = document.getElementById('acceptPrivacyBtn');
+            const formInputs = document.querySelectorAll('#leadForm input');
+            let hasAcceptedPrivacy = false;
+
+            if (formInputs.length > 0 && privacyModal && acceptPrivacyBtn) {
+                formInputs.forEach(input => {
+                    input.addEventListener('focus', function(e) {
+                        if (!hasAcceptedPrivacy) {
+                            e.target.blur(); // Remove focus so they can't type yet
+                            privacyModal.classList.add('active');
+                        }
+                    });
+                });
+
+                acceptPrivacyBtn.addEventListener('click', () => {
+                    hasAcceptedPrivacy = true;
+                    privacyModal.classList.remove('active');
+                    // Focus back on the first input
+                    const firstInput = document.getElementById('fullName');
+                    if (firstInput) {
+                        setTimeout(() => firstInput.focus(), 400); // Wait for modal animation to finish
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
