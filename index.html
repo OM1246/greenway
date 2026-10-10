@@ -1233,41 +1233,84 @@
         /* 17. AMENITIES & VILLAS (4th Slide) */
         .amenities-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem 4rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-bottom: 2rem;
         }
-        .amenity-item {
+        .amenity-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(182, 154, 90, 0.2);
+            border-radius: 16px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
             display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        .amenity-icon {
-            width: 50px;
-            height: 50px;
-            border: 1px solid var(--gold-accent);
+        .amenity-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(182, 154, 90, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .amenity-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(182, 154, 90, 0.8);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(182, 154, 90, 0.15);
+        }
+        .amenity-card:hover::before {
+            opacity: 1;
+        }
+        .amenity-icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background: rgba(182, 154, 90, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
             color: var(--gold-accent);
-            flex-shrink: 0;
+            border: 1px solid rgba(182, 154, 90, 0.3);
+            transition: transform 0.4s ease, background 0.4s ease;
+            position: relative;
+            z-index: 1;
         }
-        .amenity-text h4 {
+        .amenity-card:hover .amenity-icon-wrapper {
+            transform: scale(1.1) rotate(5deg);
+            background: rgba(182, 154, 90, 0.2);
+            box-shadow: 0 0 15px rgba(182, 154, 90, 0.4);
+        }
+        .amenity-card h4 {
             color: var(--cream);
             font-size: 1.1rem;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: var(--font-body);
+            letter-spacing: 1.5px;
+            font-family: var(--font-heading);
             font-weight: 500;
+            position: relative;
+            z-index: 1;
         }
-        .amenity-text p {
+        .amenity-card p {
             color: var(--sage);
             font-size: 0.9rem;
             margin: 0;
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
         }
         .divider {
             width: 100%;
@@ -1602,88 +1645,60 @@
                 <span class="eyebrow text-gold" style="margin-bottom: 3rem; display: block;">CURATED FOR A LIFE OF WELLNESS & WONDER</span>
                 
                 <div class="amenities-grid">
-                    <!-- Col 1 -->
-                    <div class="amenities-col">
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🏛️</div>
-                            <div class="amenity-text">
-                                <h4>PRAANAA CLUB HOUSE</h4>
-                                <p>Complete with a gymnasium, temperature-controlled swimming pool, café, meditation room.</p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🛤️</div>
-                            <div class="amenity-text">
-                                <h4>NATURE TRAILS</h4>
-                                <p>Walkways</p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">📹</div>
-                            <div class="amenity-text">
-                                <h4>24x7 CCTV</h4>
-                                <p>Surveillance & security</p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🛎️</div>
-                            <div class="amenity-text">
-                                <h4>CONCIERGE SERVICES</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🌱</div>
-                            <div class="amenity-text">
-                                <h4>ORGANIC</h4>
-                                <p>Vegetable gardens</p>
-                            </div>
-                        </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🏛️</div>
+                        <h4>PRAANAA CLUB HOUSE</h4>
+                        <p>Complete with a gymnasium, temperature-controlled swimming pool, café, meditation room.</p>
                     </div>
-                    <!-- Col 2 -->
-                    <div class="amenities-col">
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🧘</div>
-                            <div class="amenity-text">
-                                <h4>RIVER YOGA DECKS</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🛶</div>
-                            <div class="amenity-text">
-                                <h4>WATER SPORTS</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🥭</div>
-                            <div class="amenity-text">
-                                <h4>MANGO ORCHARDS</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🐦</div>
-                            <div class="amenity-text">
-                                <h4>BIRD WATCHING</h4>
-                                <p>~85 species of birds flock our forests</p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">🩺</div>
-                            <div class="amenity-text">
-                                <h4>DOCTOR ON CALL</h4>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="amenity-item">
-                            <div class="amenity-icon">👨‍🍳</div>
-                            <div class="amenity-text">
-                                <h4>IN-HOUSE CHEF</h4>
-                                <p></p>
-                            </div>
-                        </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🛤️</div>
+                        <h4>NATURE TRAILS</h4>
+                        <p>Walkways</p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">📹</div>
+                        <h4>24x7 CCTV</h4>
+                        <p>Surveillance & security</p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🛎️</div>
+                        <h4>CONCIERGE SERVICES</h4>
+                        <p></p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🌱</div>
+                        <h4>ORGANIC</h4>
+                        <p>Vegetable gardens</p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🧘</div>
+                        <h4>RIVER YOGA DECKS</h4>
+                        <p></p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🛶</div>
+                        <h4>WATER SPORTS</h4>
+                        <p></p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🥭</div>
+                        <h4>MANGO ORCHARDS</h4>
+                        <p></p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🐦</div>
+                        <h4>BIRD WATCHING</h4>
+                        <p>~85 species of birds flock our forests</p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">🩺</div>
+                        <h4>DOCTOR ON CALL</h4>
+                        <p></p>
+                    </div>
+                    <div class="amenity-card fade-in">
+                        <div class="amenity-icon-wrapper">👨‍🍳</div>
+                        <h4>IN-HOUSE CHEF</h4>
+                        <p></p>
                     </div>
                 </div>
                 <p class="footnote" style="margin-top: 2rem; font-size: 0.875rem; color: var(--sage);">Praanaa Club House is a part of the upcoming Greenway Wellness Resort</p>
