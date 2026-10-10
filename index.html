@@ -1233,16 +1233,16 @@
         /* 17. AMENITIES & VILLAS (4th Slide) */
         .amenities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-            padding-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
         }
         .amenity-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(182, 154, 90, 0.2);
-            border-radius: 16px;
-            padding: 2.5rem 1.5rem;
+            border-radius: 12px;
+            padding: 1.5rem 1rem;
             text-align: center;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
@@ -1251,7 +1251,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .amenity-card::before {
             content: '';
@@ -1265,23 +1265,23 @@
             transition: opacity 0.4s ease;
         }
         .amenity-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             border-color: rgba(182, 154, 90, 0.8);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(182, 154, 90, 0.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(182, 154, 90, 0.15);
         }
         .amenity-card:hover::before {
             opacity: 1;
         }
         .amenity-icon-wrapper {
-            width: 70px;
-            height: 70px;
+            width: 48px;
+            height: 48px;
             background: rgba(182, 154, 90, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
             color: var(--gold-accent);
             border: 1px solid rgba(182, 154, 90, 0.3);
             transition: transform 0.4s ease, background 0.4s ease;
@@ -1291,24 +1291,24 @@
         .amenity-card:hover .amenity-icon-wrapper {
             transform: scale(1.1) rotate(5deg);
             background: rgba(182, 154, 90, 0.2);
-            box-shadow: 0 0 15px rgba(182, 154, 90, 0.4);
+            box-shadow: 0 0 10px rgba(182, 154, 90, 0.3);
         }
         .amenity-card h4 {
             color: var(--cream);
-            font-size: 1.1rem;
-            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             font-family: var(--font-heading);
-            font-weight: 500;
+            font-weight: 600;
             position: relative;
             z-index: 1;
         }
         .amenity-card p {
             color: var(--sage);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin: 0;
-            line-height: 1.5;
+            line-height: 1.4;
             position: relative;
             z-index: 1;
         }
